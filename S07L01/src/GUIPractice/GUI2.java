@@ -76,5 +76,6 @@ public class GUI2 {
 		window.setSize(250, 100);
 		window.setLocation(100, 100);
 		window.setVisible(true);
+		
 	}
 }
