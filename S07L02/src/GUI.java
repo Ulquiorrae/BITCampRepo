@@ -32,6 +32,7 @@ public class GUI {
 		window.add(panel);
 		
 		window.setVisible(true);
+	
 		
 	}
 
