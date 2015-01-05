@@ -21,8 +21,8 @@ public class GuessingGame {
 		System.out.println("Good luck and have fun!");
 		System.out.println();
 
-		int randomBroj;
-		int uneseniBroj;
+		int randomNumber;
+		int guess;
 		boolean newGame;
 		int novi = 1;
 
