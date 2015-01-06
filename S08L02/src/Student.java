@@ -1,12 +1,12 @@
-
 public class Student {
 
 	private String name;
 	private int index;
 	private double gpa;
-	
+
 	/**
 	 * Konstruktor
+	 * 
 	 * @param name
 	 * @param index
 	 * @param gpa
@@ -40,34 +40,33 @@ public class Student {
 	public void setGpa(double gpa) {
 		this.gpa = gpa;
 	}
-	
-	
-//	public int compareTo(Student other){
-//		
-//		if(this.gpa > other.gpa){
-//			return 1;
-//		}
-//		if(this.gpa < other.gpa){
-//			return -1;
-//		}
-//		if(this.gpa == other.gpa){
-//			if(this.index > other.index){
-//				return 1;
-//			}
-//			if(this.index < other.index){
-//				return -1;
-//			}
-//			if(this.index == other.index){
-//				if(this.name.compareTo(other.name) == 1){
-//					return 1;
-//				}
-//				else return -1;
-//			}
-//		}
-//		return 0;
-//		
-//	}
-	
+
+	// public int compareTo(Student other){
+	//
+	// if(this.gpa > other.gpa){
+	// return 1;
+	// }
+	// if(this.gpa < other.gpa){
+	// return -1;
+	// }
+	// if(this.gpa == other.gpa){
+	// if(this.index > other.index){
+	// return 1;
+	// }
+	// if(this.index < other.index){
+	// return -1;
+	// }
+	// if(this.index == other.index){
+	// if(this.name.compareTo(other.name) == 1){
+	// return 1;
+	// }
+	// else return -1;
+	// }
+	// }
+	// return 0;
+	//
+	// }
+
 	public int compareTo(Student other) {
 
 		if (this.gpa > other.gpa)
@@ -95,6 +94,6 @@ public class Student {
 		}
 
 	}
-	
-	
+
 }
+	
