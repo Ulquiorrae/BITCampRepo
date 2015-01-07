@@ -13,12 +13,11 @@ public class LinkedListIntTEST {
 		
 		newList.printList();
 		
-		newList.removeAt(3);
+		System.out.println("################");
 		
-		System.out.println("#################");
+		newList.add(10,0);
 		
 		newList.printList();
-		
 	}
 	
 }

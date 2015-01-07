@@ -34,6 +34,46 @@ public class LinkedListInt {
 	}
 	
 	/**
+	 * Method that adds a new element with value "value" on a position indexed with "index"
+	 * @param value - value of a new element
+	 * @param index - index that you want that element to be on
+	 */
+	public void add(int value, int index) {
+
+		if (index < 0 || index > size) {
+			throw new IndexOutOfBoundsException("Index is out of bound!");
+		}
+
+		Node newNode = new Node(value);
+
+		if (index == 0) {
+			newNode.next = head;
+			head = newNode;
+			size++;
+			return;
+
+		}
+		if (index == size) {
+			add(value);
+			return;
+		}
+
+		Node behind = head.next;
+		Node that = head;
+		int counter = 1;
+		while (counter < index) {
+
+			behind = behind.next;
+			that = that.next;
+			counter++;
+		}
+
+		that.next = newNode;
+		newNode.next = behind;
+
+	}
+	
+	/**
 	 * Method which removes a Node from a list
 	 * @param index
 	 */
