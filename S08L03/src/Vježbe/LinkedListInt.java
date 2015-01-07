@@ -109,6 +109,40 @@ public class LinkedListInt {
 		
 	}
 	
+	/**
+	 * Method that copies LinkedList items into a standard array
+	 * @return array of integers
+	 */
+	int[] toArray() {
+		int[] newArray = new int[size];
+		int i=0;
+		Node current = head;  			
+		while(current.next != null) {  
+			
+			newArray[i] = current.value;
+			current = current.next;  
+			i++;
+		}
+		
+		
+		return newArray;
+	}
+	
+	/**
+	 * Method that fuses 2 linked lists.
+	 * @param other - another LinkedList that you want to add to the first one.
+	 */
+	public void add(LinkedListInt other){
+		
+		Node current1 = this.head;
+		Node current2 = other.head;
+		int counter = 1;            
+		while(current1.next != null) {   
+			current1 = current1.next;     
+		}
+		current1.next = current2;
+	}
+	
 	
 	/**
 	 * Method for printing a list on screen. 
@@ -120,8 +154,6 @@ public class LinkedListInt {
 			tempNode = tempNode.next;            
 		}
 	}
-	
-	
 	
 	private class Node{
 		
@@ -148,5 +180,31 @@ public class LinkedListInt {
 		}
 		
 	}
+	
+//	private class Node<T>{
+//		
+//		public T value;
+//		public Node next;
+//		
+//		/**
+//		 * Constructor for class Node.
+//		 * @param value
+//		 */
+//		public Node(T value) {
+//			this.value = value;
+//			this.next = null;
+//		}
+//		
+//		/**
+//		 * Constructor for class Node, recieves both value and next
+//		 * @param value
+//		 * @param next
+//		 */
+//		public Node(T value, Node next) {
+//			this.value = value;
+//			this.next = next;
+//		}
+//		
+//	}
 	
 }
