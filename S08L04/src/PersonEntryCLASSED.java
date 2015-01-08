@@ -8,7 +8,8 @@ public class PersonEntryCLASSED {
 		PersonNode firstPerson = null;
 		PersonNode lastPerson = null;
 		
-		PersonListInterface list = new PersonList();
+		//Ovdje samo mjenjamo da li želimo dynamiclistu, linked listu...itd.
+		PersonListInterface list = new PersonDynamicArrayList();
 
 		System.out.println("Enter names you want to insert into a Linked-list: ");
 		
