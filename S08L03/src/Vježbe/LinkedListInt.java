@@ -123,8 +123,6 @@ public class LinkedListInt {
 			current = current.next;  
 			i++;
 		}
-		
-		
 		return newArray;
 	}
 	
