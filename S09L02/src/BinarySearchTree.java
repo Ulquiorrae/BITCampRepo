@@ -56,6 +56,9 @@ public class BinarySearchTree {
 		System.out.println(root.value);
 		printTree(root.right);
 	}
+	
+
+	
 
 	
 	private class Node {
