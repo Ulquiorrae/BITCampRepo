@@ -25,6 +25,9 @@ public class MulitpleValueMap {
 			}
 			int key = hash(value);
 			
+			
+			
+			
 System.out.println("I: " + i + " Key: " + key + " Value: " + value);
 			if( keys.contains(key) ){
 				map.get(key).add(value);
